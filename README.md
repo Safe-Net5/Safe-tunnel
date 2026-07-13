@@ -15,7 +15,7 @@
 ## 🚀 Installation
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Safe-Net5/Safe-tunnel/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Safe-Net5/Safe-Tunnel/main/install.sh)
 ```
 
 اجرای منوی مدیریت:
