@@ -427,32 +427,23 @@ while true; do
   clear || true
   print_banner
 
-  echo -e "${CLR_CYAN}╭──────────────────────────────────────────────╮${CLR_RESET}"
-echo -e "${CLR_CYAN}│${CLR_RESET}               ${CLR_BOLD}Safe Tunnel v${VERSION}${CLR_RESET}               ${CLR_CYAN}│${CLR_RESET}"
-echo -e "${CLR_CYAN}├──────────────────────────────────────────────┤${CLR_RESET}"
-echo ""
+  echo -e "${CLR_CYAN}╭────────── Safe Tunnel v${VERSION} ──────────╮${CLR_RESET}"
+echo -e "${CLR_CYAN}│${CLR_RESET}           Tunnel Manager             ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}├──────────────────────────────────────┤${CLR_RESET}"
 
-echo -e "${CLR_GREEN}${CLR_BOLD}1.${CLR_RESET} Create/Update profile"
-echo -e "${CLR_CYAN}──────────────────────────────────────────────${CLR_RESET}"
-echo ""
+echo -e "${CLR_CYAN}│ ${CLR_GREEN}${CLR_BOLD}1.${CLR_RESET} Create/Update profile          ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_CYAN}${CLR_BOLD}2.${CLR_RESET} Manage tunnel                  ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_GREEN}${CLR_BOLD}3.${CLR_RESET} Enable health-check            ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_RED}${CLR_BOLD}4.${CLR_RESET} Disable health-check           ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_GREEN}${CLR_BOLD}5.${CLR_RESET} Install script                 ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_CYAN}${CLR_BOLD}6.${CLR_RESET} Update script                  ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_RED}${CLR_BOLD}7.${CLR_RESET} Uninstall script               ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_GREEN}${CLR_BOLD}8.${CLR_RESET} Optimize server                ${CLR_CYAN}│${CLR_RESET}"
 
-echo -e "${CLR_CYAN}${CLR_BOLD}2.${CLR_RESET} Manage tunnel (select slot)"
-echo -e "${CLR_CYAN}──────────────────────────────────────────────${CLR_RESET}"
-echo ""
-
-echo -e "${CLR_GREEN}${CLR_BOLD}3.${CLR_RESET} Enable cron health-check"
-echo -e "${CLR_RED}${CLR_BOLD}4.${CLR_RESET} Disable cron health-check"
-echo -e "${CLR_CYAN}──────────────────────────────────────────────${CLR_RESET}"
-echo ""
-
-echo -e "${CLR_GREEN}${CLR_BOLD}5.${CLR_RESET} Install script (system-wide)"
-echo -e "${CLR_CYAN}${CLR_BOLD}6.${CLR_RESET} Update script (self-update)"
-echo -e "${CLR_RED}${CLR_BOLD}7.${CLR_RESET} Uninstall script"
-echo -e "${CLR_CYAN}──────────────────────────────────────────────${CLR_RESET}"
-echo -e "${CLR_GREEN}${CLR_BOLD}8.${CLR_RESET} Optimize server (BBR + sysctl)"
-echo -e "${CLR_CYAN}├──────────────────────────────────────────────┤${CLR_RESET}"
-echo -e "${CLR_RED}${CLR_BOLD}0.${CLR_RESET} Exit"
-echo -e "${CLR_CYAN}╰──────────────────────────────────────────────╯${CLR_RESET}"
+echo -e "${CLR_CYAN}├──────────────────────────────────────┤${CLR_RESET}"
+echo -e "${CLR_CYAN}│ ${CLR_RED}${CLR_BOLD}0.${CLR_RESET} Exit                           ${CLR_CYAN}│${CLR_RESET}"
+echo -e "${CLR_CYAN}╰──────────────────────────────────────╯${CLR_RESET}"
+echo
 
   read -r -p "Select: " c < /dev/tty
   case "$c" in
